@@ -35,10 +35,10 @@ class Auto:
     
     def cantidadAsientos(self):
         contador = 0
-        for asiento in Asiento:
+        for asiento in Asiento.asiento:
             if asiento is not None:
                 contador += 1
-        return contador
+            return contador
     
     def verificarIntegridad(self):
         if self.registro == Motor.registro:
